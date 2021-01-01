@@ -1,4 +1,4 @@
-package net.zdm.calculatorservice;
+package net.zdm.calculatorservice.constant;
 
 public class ArithmeticConstants {
 

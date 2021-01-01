@@ -1,6 +1,6 @@
 package net.zdm.calculatorservice.service;
 
-import net.zdm.calculatorservice.ArithmeticConstants;
+import net.zdm.calculatorservice.constant.ArithmeticConstants;
 import net.zdm.calculatorservice.domain.ArithmeticHistoryRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
