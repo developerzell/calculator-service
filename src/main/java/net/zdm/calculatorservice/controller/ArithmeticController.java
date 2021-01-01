@@ -1,8 +1,11 @@
 package net.zdm.calculatorservice.controller;
 
+import net.zdm.calculatorservice.domain.ArithmeticHistoryRecord;
 import net.zdm.calculatorservice.service.ArithmeticService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Stack;
 
 @RestController
 @CrossOrigin("*")
@@ -49,5 +52,10 @@ public class ArithmeticController {
         Float result = arithmeticService.divide(left, right);
         System.out.printf("%s / %s = %s\n", left, right, result);
         return result;
+    }
+
+    @GetMapping("history")
+    public Stack<ArithmeticHistoryRecord> getHistory() {
+        return arithmeticService.getHistory();
     }
 }
